@@ -361,6 +361,41 @@ hr{
 
 /* INICIO CSS DE SOBRE HTML*/
 
+.sobre{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgb(236, 154, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre .contenido-sobre img{
+    height: auto;
+    width: 600px;
+    max-width: 100%;
+}
+
+.texto-sobre{
+    width: 50%;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+contenido-sobre{
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
 
 /* FIN CSS DE SOBRE HTML*/
 
@@ -503,7 +538,7 @@ hr{
         text-align: center;
     }
 
-    .palabras-ind::nth-child(1), .palabras-ind::nth-child(2){
+    .palabras-ind:nth-child(1), .palabras-ind:nth-child(2){
         margin-bottom: 60%;
     } 
 
@@ -579,7 +614,6 @@ hr{
     }
 
 }
-
 
 /* FIN DE PARTE DEL HEADER PARA QUE QUEDE DEL TODO BIEN EN MOBILE*/
 
