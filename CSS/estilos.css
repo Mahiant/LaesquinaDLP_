@@ -366,13 +366,13 @@ hr{
     margin: 0;
     box-sizing: border-box;
     width: 100%;
-    background-color: rgb(236, 154, 30);
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(236, 154, 30)
 }
 
-.sobre .contenido-sobre img{
+.contenido-sobre img{
     height: auto;
     width: 600px;
     max-width: 100%;
@@ -382,20 +382,27 @@ hr{
     width: 50%;
     max-width: 100%;
     padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-contenido-sobre{
-    width: 1280px;
+.contenido-sobre{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1290px;
     max-width: 95%;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
 }
 
-
-
+.parrafo-sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(43, 24, 2);
+}
 
 /* FIN CSS DE SOBRE HTML*/
 
