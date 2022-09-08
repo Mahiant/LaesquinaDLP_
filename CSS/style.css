@@ -1,4 +1,243 @@
-/* SCSS DE ORDENAR HTML*/
+/* VARIABLES DE LA PAG*/
+body {
+  font-family: sans-serif;
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: #0c0c0c; }
+
+header {
+  display: flex;
+  min-height: 70px;
+  background-color: #915701;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; }
+  header .logo {
+    display: flex;
+    align-items: center; }
+    header .logo img {
+      height: 50px;
+      margin-right: 10px; }
+  header nav a {
+    font-weight: 600;
+    padding-right: 10px; }
+    header nav a:hover {
+      color: #eeecec; }
+
+footer {
+  background: #915701;
+  padding: 60px 0px 30px 0px;
+  margin: auto;
+  overflow: hidden; }
+  footer .contenedor-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc; }
+  footer .content-foo {
+    text-align: center; }
+    footer .content-foo h4 {
+      color: #eeecec;
+      border-bottom: 3px solid #0a0202;
+      padding-bottom: 5px;
+      margin-bottom: 20px; }
+    footer .content-foo p {
+      color: #ccc; }
+  footer .titulo-final {
+    text-align: center; }
+
+main .carta-menu {
+  padding: 30px 0 60px 0; }
+  main .carta-menu .contenedor-carta-menu {
+    display: flex;
+    justify-content: space-evenly; }
+    main .carta-menu .contenedor-carta-menu .imagen-carta-menu {
+      width: 48%; }
+  main .carta-menu .carta-menu .contenido-textos {
+    width: 48%; }
+    main .carta-menu .carta-menu .contenido-textos .h3 {
+      margin-bottom: 15px; }
+    main .carta-menu .carta-menu .contenido-textos h3 span {
+      background: #915701;
+      color: #eeecec;
+      border-radius: 50%;
+      display: inline-block;
+      text-align: center;
+      width: 30px;
+      height: 30px;
+      padding: 2px;
+      box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+      margin-right: 5px; }
+    main .carta-menu .carta-menu .contenido-textos p {
+      padding: 0px 0px 30px 15px;
+      font-weight: 300;
+      text-align: justify; }
+
+.ofrecemos-port {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+  .ofrecemos-port .imagen-te-ofrecemos {
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5); }
+    .ofrecemos-port .imagen-te-ofrecemos > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block; }
+  .ofrecemos-port .hover-te-ofrecemos {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(1);
+    background: rgba(147, 89, 1, 0.726);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .ofrecemos-port .hover-te-ofrecemos img {
+      width: 50px; }
+    .ofrecemos-port .hover-te-ofrecemos p {
+      color: white; }
+    .ofrecemos-port .hover-te-ofrecemos:hover .hover-te-ofrecemos {
+      transform: scale(0); }
+
+.btn-neon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  overflow: hidden;
+  transition: 0.2s;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: #2b1802; }
+  .btn-neon:hover {
+    background: #915701;
+    box-shadow: 0 0 10px #915701, 0 0 40px #915701, 0 0 80px #915701;
+    transition-delay: 0.3s;
+    color: #f2f2f2; }
+
+.cartas {
+  display: flex;
+  justify-content: space-evenly; }
+  .cartas .carta {
+    background: #915701;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6); }
+    .cartas .carta .img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border: 3px solid #eeecec;
+      border-radius: 50%;
+      display: block; }
+  .cartas .cartas .carta > .contenido-texto-carta {
+    width: 60%;
+    color: #eeecec; }
+  .cartas .cartas .carta > .contenido-texto-carta p {
+    font-weight: 300;
+    padding-top: 5px; }
+
+.palabras-llamativas {
+  background: #f2f2f2;
+  padding-bottom: 30px; }
+  .palabras-llamativas .palabras-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .palabras-llamativas .palabras-ind {
+    width: 28%;
+    text-align: center; }
+    .palabras-llamativas .palabras-ind img {
+      width: 90%; }
+    .palabras-llamativas .palabras-ind h3 {
+      margin: 10px 0; }
+    .palabras-llamativas .palabras-ind p {
+      font-weight: 300;
+      text-align: justify; }
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto; }
+  .wrap .column-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem; }
+    .wrap .column-3 .pizarra-restaurante {
+      background: url(../images/pizarra-menu.webp);
+      background-size: cover;
+      justify-content: center;
+      align-items: center;
+      color: #f2f2f2;
+      text-align: center;
+      background-repeat: no-repeat;
+      border-radius: 6px;
+      display: flex;
+      flex-flow: column; }
+      .wrap .column-3 .pizarra-restaurante .precio-pizarra {
+        font-weight: bold; }
+        .wrap .column-3 .pizarra-restaurante .precio-pizarra span {
+          font-size: 1rem;
+          color: #ec9a1e; }
+  .wrap hr {
+    background-color: #ec9a1e;
+    height: 2.5px;
+    width: 30px;
+    border: none; }
+
+.sobre {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ec9a1e; }
+
+.contenido-sobre {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1290px;
+  max-width: 95%;
+  margin: 0 auto; }
+  .contenido-sobre img {
+    height: auto;
+    width: 600px;
+    max-width: 100%; }
+  .contenido-sobre .texto-sobre {
+    width: 50%;
+    max-width: 100%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+.parrafo-sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #2b1802; }
+
 .contenedor-form {
   margin: auto;
   padding: 0;
@@ -63,4 +302,29 @@
     padding: 50px 50px 0 0;
     align-items: center; }
 
-/* SCSS DE ORDENAR HTML*/
+.contenedor {
+  padding: 60px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden; }
+
+.titulo {
+  color: #915701;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px; }
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column; }
+  nav {
+    padding: 10px 0px; } }
+
+@media (max-width: 768px) {
+  .columns {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (max-width: 480px) {
+  .columns {
+    grid-template-columns: repeat(1, 1fr); } }

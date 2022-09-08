@@ -1,0 +1,42 @@
+.sobre{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 154, 30)   
+}
+
+.contenido-sobre{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1290px;
+    max-width: 95%;
+    margin: 0 auto;
+
+    img{
+        height: auto;
+        width: 600px;
+        max-width: 100%;
+    }
+
+    .texto-sobre{
+        width: 50%;
+        max-width: 100%;
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .parrafo-sobre{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: rgb(43, 24, 2);
+        }
+    }
+}
