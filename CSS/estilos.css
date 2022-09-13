@@ -357,6 +357,29 @@ hr{
     }
 }
 
+.btn-neon2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px 15px 15px;
+    margin-bottom: 70px;
+    overflow: hidden;
+    transition: 0.2s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.btn-neon2:hover{
+    background: rgb(145, 87, 1);
+    box-shadow: 0 0 10px rgb(145, 87, 1), 0 0 40px rgb(145, 87, 1), 0 0 80px rgb(145, 87, 1);
+    transition-delay: 0.3s;
+    color: #f2f2f2;
+}
+
+.btn-neon2{
+    color: rgb(43, 24, 2);
+}
+
 /* FIN CSS DE MENÚ HTML */
 
 /* INICIO CSS DE SOBRE HTML*/
