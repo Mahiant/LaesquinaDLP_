@@ -503,6 +503,22 @@ hr{
     background: rgb(145, 87, 1);
 }
 
+.contenedor-form{
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center;
+}
+
+.info-form{
+    min-width: 300px;
+    max-width: 45%;
+}
+
+.form-order{
+    min-width: 300px;
+    max-width: 45%;
+}
+
 .contenedor-mapa{
     display: flex;
     justify-content: center;
